@@ -9,3 +9,9 @@ A starting base for running a [Falcon API](https://falcon.readthedocs.io/en/stab
 - Uses `pipenv` to create a virtual environment that is installed system-wide in the container.
 - Resulting image is only 150 MB.
 - Contains some sane defaults for gunicorn.
+
+## Usage
+
+1. Run `docker build -t app-container .` to build the container with defaults.
+2. Run `docker run -p 8000:8000 app-container` to start the container and bind to `8000`.
+3. Visit `https://localhost:8000`.
